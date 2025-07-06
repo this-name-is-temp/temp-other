@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+svg {
+    max-width: 90%;
+    height: 80vh;
+    width: auto;
+}
+
+.section {
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #b7c4c8;
+    gap: 0px;
+    row-gap: 0px;
+    column-gap: 0px;
+    flex-wrap: wrap;
+}
+
+.ctn {
+    /* width: 100%; */
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    align-items: center;
+}
+
+#timeout-text {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: calc(2vw + 2vh);
+}
+
+.mybox {
+    --cur-pos: 150px;
+    position: relative;
+    animation: right 4s forwards;
+}
+
+@keyframes right {
+    from {
+        left: var(--cur-pos);
+    }
+
+    to {
+        left: 300px;
+    }
+}
+
+@keyframes left {
+    from {
+        left: var(--cur-pos);
+    }
+
+    to {
+        left: 0px;
+    }
+}
